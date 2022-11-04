@@ -12,28 +12,28 @@ if (tot >= 100 &&  tot<= 200)
 {
     totRm = tot * reduc1;
     totF = totRm + port;
-    document.write("Le prix total après réduction est de " + totF);
+    document.write("Le prix total sera de " + totF+ " € ");
 }
 else if (tot > 200 && tot < 500)
 {
     totRm = tot * reduc2;
     totF = (totRm * 1.02);
-    document.write("Le prix total après réduction est de " + totF);
+    document.write("Le prix total sera de " + totF+ " € ");
 }
 else if (tot < 100)
 {
     totRm = tot;
     totF = totRm + port;
-    document.write("Le prix total après réduction est de " + totF);
+    document.write("Le prix total sera de " + totF+ " € " +" ,le port est de : "+ (totF - totRm)+ " € ");
 }
 
 else if (tot > 200 && totRm <= 500)
 {
     totRm = tot * reduc2;
     totF = (totRm * 1.02);
-    document.write("Le prix total après réduction est de " + totF);
+    document.write("Le prix total après réduction sera de : " + totF + " € " +" ,la réduction est de : "+ (totF - totRm)+ " € ");
 }
 else if (totRm > 500)
 {
-    document.write("Le prix total après réduction est de " + totRm);
+    document.write("Le prix total après réduction sera de " + totRm + " € ");
 }
