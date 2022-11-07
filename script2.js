@@ -1,15 +1,14 @@
 //Exercice 2 :
-
-let x = parseInt(prompt("Saisissez un nombre que voulez multipliez"));
-let t = parseInt(prompt("Saisissez le nombre de multiple que vous voulez afficher"));
-function n ()
+let x = parseInt(prompt("Saisissez un nombre pour afficher sa table"));
+function n (x)
 {
-    for (n = 1; n <= t; n++  )
+    let i;
+    for (i = 1; i <= 10; i++  )
     {
-        resultat = x * t;
-        console.log( x +" x " + n + " = " + (x *n ))
-        document.write("<br>"+x +" x " + n + " = " + (x *n ) )
+        resultat = x * i;
+        console.log( x +" x " + i + " = " + (x *i ))
+        document.write("<br>"+x +" x " + i + " = " + (x *i ) )
+
     }
-    
 }
-n();
+n(x);
